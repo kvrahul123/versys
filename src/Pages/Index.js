@@ -40,7 +40,7 @@ function Index() {
             <div className="hero-single hero__padding hero__padding--h2">
                 <div className="container-fluid">
                     <div className="row align-items-center">
-                        <div className="col-xl-6 col-lg-7">
+                        <div className="col-xl-6 col-lg-7 header_banner">
                             <div className="hero__caption hero__caption--h2">
                                 <h1 className="hero--big-title theme-color fw-700" data-animation="fadeInDown" data-delay=".4s">At the forefront of Digital and Cybersecurity Transformation</h1>
                                 <p>Versys Technologies is one of India’s leading firms that has helped transform the IT Infrastructure for hundreds of clients.</p>
@@ -51,7 +51,7 @@ function Index() {
                         <div className="col-xl-6 col-lg-5">
                             <div className="hero__thumb">
                                 
-                                <img src="assets/images/img/hero-img-h2.png" alt=""/>
+                                <img src="assets/images/service/abstract-creative-website-hosting-illustration-removebg-preview.png" alt=""/>
                             </div>
                         </div>
                     </div>
