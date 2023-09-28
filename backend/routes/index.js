@@ -36,7 +36,7 @@ transporter.use('compile', hbs(handlebarOptions))
       const mailOptions = {
         from: '"Versys" <kvraghul2018@gmail.com>', // sender address
         template: "email", // the name of the template file, i.e., email.handlebars
-        to: data.email,
+        to: "support@versysnetworks.com",
         subject: `Contact Mail`,
         context: {
           name: data.name,
