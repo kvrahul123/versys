@@ -17,36 +17,23 @@ const Networking = () => {
 
         <div className="col-lg-12 mb-30">
             <div className="feature__content">
-                <span className="fw-700 text-uppercase"><span></span>Products</span>
+                <span className="fw-700 text-uppercase"><span></span>Offerings</span>
                 <h2 className="theme-color fw-700 mb-30">Networking</h2>
-                <p>  The right technologies to build and expand networks of all sizes from small offices to global enterprises.</p>
+                <p>  We provide end to end solutions needed for all your Enterprise networking requirements.</p>
                 <img src="../assets/images/service/futuristic-smart-city-with-5g-global-network-technology.jpeg" class="card-img-top mb-5" alt="audio video"/>
 
-                <h2 className="theme-color fw-700 mb-30">All Networking Products</h2>
+                <h2 className="theme-color fw-700 mb-30">All Networking Offerings</h2>
   
 
                 <div className='container'>
                   <div className='row'>
 
-                    <div className='col-md-4 mt-5'>
-                    <div class="card" >
-                          <img src="../assets/images/audio-video/adapters.jpg" class="card-img-top" alt="audio video"/>
-                          <div class="card-body">
-                          <h5 class="card-title">Console Servers</h5>
-                        </div>
-                        </div>
-                    </div>
-
-
-
-
-                    
 
                     <div className='col-md-4 mt-5'>
                     <div class="card" >
                           <img src="../assets/images/service/services-thumb-h2-2.jpeg" class="card-img-top" alt="cables"/>
                           <div class="card-body">
-                            <h5 class="card-title">Converters</h5>
+                            <h5 class="card-title">Switches</h5>
                             
 
                           </div>
@@ -55,26 +42,10 @@ const Networking = () => {
 
                     <div className='col-md-4 mt-5'>
                     <div class="card" >
-                          <img src="../assets/images/service/services-thumb-h2-3.jpeg" style={{height:"15em"}} class="card-img-top" alt="infrastructure"/>
+                          <img src="../assets/images/service/routers-2.jpeg" style={{"width": "67%","margin-left": "58px"}}class="card-img-top" alt="cables"/>
                           <div class="card-body">
-                            <h5 class="card-title">Datacomm</h5>
-
-                          </div>
-                        </div>
-                    </div>
-
-
-
-
-
-
-
-
-                    <div className='col-md-4 mt-5'>
-                    <div class="card" >
-                          <img src="../assets/images/service/global-business-internet-network-connection-iot-internet-things-business-intelligence-concept-busines-global-network-futuristic-technology-background-ai-generative.jpeg" class="card-img-top" alt="audio video"/>
-                          <div class="card-body">
-                            <h5 class="card-title">Docking Stations</h5>
+                            <h5 class="card-title">Routers</h5>
+                            
 
                           </div>
                         </div>
@@ -82,36 +53,32 @@ const Networking = () => {
 
                     <div className='col-md-4 mt-5'>
                     <div class="card" >
-                          <img src="../assets/images/service/technology-elements-background.jpeg" class="card-img-top" alt="cables"/>
+                          <img src="../assets/images/service/wifi.jpg" class="card-img-top" alt="cables"/>
                           <div class="card-body">
-                            <h5 class="card-title">Extenders</h5>
-     
-                          </div>
-                        </div>
-                    </div>
-
-                    <div className='col-md-4 mt-5'>
-                    <div class="card" >
-                          <img src="../assets/images/service/futuristic-smart-city-with-5g-global-network-technology.jpeg" style={{height:"15em"}} class="card-img-top" alt="infrastructure"/>
-                          <div class="card-body">
-                            <h5 class="card-title">Gang Switches</h5>
+                            <h5 class="card-title">Wifi</h5>
+                            
 
                           </div>
                         </div>
                     </div>
 
+                    
 
 
 
-                    <div className='col-md-4 mt-5'>
-                    <div class="card" >
-                          <img src="../assets/images/service/futuristic-smart-city-with-5g-global-network-technology.jpeg" style={{height:"15em"}} class="card-img-top" alt="infrastructure"/>
-                          <div class="card-body">
-                            <h5 class="card-title">Switches</h5>
 
-                          </div>
-                        </div>
-                    </div>
+
+
+
+
+
+  
+
+
+
+
+
+            
                   </div>
                 </div>
 

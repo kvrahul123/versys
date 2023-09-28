@@ -87,9 +87,9 @@ function openSubMenu(type){
                                                 <li><a className="pointer" onClick={()=>redirectPage("/")}>Home</a>
                                          
                                                 </li>
-                                                <li><a className="pointer" onClick={()=>redirectPage("/about-us")}>About Us</a></li>
+                                                {/* <li><a className="pointer" onClick={()=>redirectPage("/about-us")}>About Us</a></li> */}
                                       
-                                                <li className="drop"><a href="#">Services</a>
+                                                {/* <li className="drop"><a href="#">Services</a>
                                                     <ul className="submenu">
                                                         <li><a className="pointer" onClick={()=>redirectPage("/managed-it-services")}>Managed IT Services</a>
                                                         </li>
@@ -97,33 +97,75 @@ function openSubMenu(type){
                                                         <li><a className="pointer" onClick={()=>redirectPage("/amc-services")}>AMC Services</a></li>
                                                         <li><a className="pointer" onClick={()=>redirectPage("/consulting-services")}>Consulting Services</a></li>
                                                     </ul>
-                                                </li>
+                                                </li> */}
 
-                                                <li className="drop"><a href="#">Products</a>
+                                                <li className="drop"><a href="#">Offerings</a>
                                                 <ul className="submenu productmenu">
                                                    <div class="row">
                                                        
-                                                   <div class="col-6">
-                                                        <li><a className="pointer" onClick={()=>redirectPage("/products/all-products")}>All Products</a>
+                                                   <div class="col-12">
+                                                        <li><a className="pointer" onClick={()=>redirectPage("/offerings/all-offerings")}>All Offerings</a>
                                                         </li>
-                                                        {/* <li><a  className="pointer" onClick={()=>redirectPage("/cloud-it-services")}  >Product Spotlight</a></li> */}
-                                                        <li><a className="pointer" onClick={()=>redirectPage("/products/audio-video")}>Audio video</a></li>
-                                                        <li><a className="pointer" onClick={()=>redirectPage("/products/cables")}>Cables</a></li>
-                                                        <li><a className="pointer" onClick={()=>redirectPage("/products/infrastructure")} >Infrastructure</a>
-                                                        </li>
+                                                        <li><a  className="pointer"   >Unified Communications & Contact centres</a></li>
+                                                        <li><a  className="pointer"  >Cyber Security</a></li>
+                                                        <li><a className="pointer" onClick={()=>redirectPage("/offerings/networking")}>Networking</a></li>
+                                                        <li><a className="pointer" >Hybrid Cloud solutions</a></li>
+                                                        <li><a className="pointer" onClick={()=>redirectPage("/offerings/it-services")}>Managed IT Services</a></li>
+                                                        <li><a className="pointer" onClick={()=>redirectPage("/offerings/audio-video")}>Audio video</a></li>
+                                                        {/* <li><a className="pointer" onClick={()=>redirectPage("/products/cables")}>Cables</a></li>
+                                                        <li><a className="pointer" onClick={()=>redirectPage("/products/infrastructure")} >Infrastructure</a> 
+                                                        </li>*/}
                                                         </div>
-                                                    <div class="col-6">
+                                                    {/* <div class="col-6">
 
 
                                                         <li><a  className="pointer" onClick={()=>redirectPage("/products/iot")}  >IoT</a></li>
                                                         <li><a className="pointer" onClick={()=>redirectPage("/products/kvm")}>KVM</a></li>
                                                         <li><a className="pointer" onClick={()=>redirectPage("/products/networking")}>Networking</a></li>
                                                 
+                                                        </div>*/}
+                                                    </div> 
+                                                    </ul>
+                                                </li>
+
+
+                                                <li className="drop"><a href="#">Partners</a>
+                                                <ul className="submenu productmenu">
+                                                <div class="container">
+                                                   <div class="row">
+                                                       
+                                                   <div class="col-6">
+                                                        <li><img src="../assets/images/partners/avaya.png" style={{"width":"50%"}}/>
+                                                        </li>
+                                                        <li><img src="../assets/images/partners/juniper-2.webp" style={{"width":"50%"}}/>
+                                                        </li>
+                                                        <li><img src="../assets/images/partners/fortinet.svg" style={{"width":"50%"}}/>
+                                                        </li>
+                                                        
+                                                        <li><img src="../assets/images/partners/paloalto.png" style={{"width":"50%"}}/>
+                                                        </li>
                                                         </div>
+                                                    <div class="col-6">
+
+
+                                                    <li><img src="../assets/images/partners/poly.webp" style={{"width":"50%"}}/>
+                                                        </li>
+                                                        <li><img src="../assets/images/partners/logitech.jpeg" style={{"width":"50%","margin-left": "-35px"}}/>
+                                                        </li>
+                                                        <li><img src="../assets/images/partners/lg.jpeg" style={{"width":"30%"}}/>
+                                                        </li>
+                                                        
+                                                        <li><img src="../assets/images/partners/samsung.png" style={{"width":"50%","margin-top": "-10px"}}/>
+                                                        </li>
+                                                
+                                                        </div>
+                                                    </div>
                                                     </div>
                                                     </ul>
                                                 </li>
-                                                <li><a className="pointer" onClick={()=>redirectPage("/contact-us")}>Contacts</a></li>
+
+
+                                                <li><a className="pointer" onClick={()=>redirectPage("/contact-us")}>Contact Us</a></li>
                                             </ul>
                                         </nav>
                                     </div>
@@ -140,10 +182,10 @@ function openSubMenu(type){
                         <div className="header__right header__right--h2 d-flex align-items-center justify-content-end">
                             <div className="header--social d-none d-xl-block">
                                 <ul>
-                                    <li><a href="#"><i className="fab fa-facebook-f"></i></a></li>
-                                    <li><a href="#"><i className="fab fa-twitter"></i></a></li>
-                                    <li><a href="#"><i className="fab fa-instagram"></i></a></li>
-                                    <li><a href="#"><i className="fab fa-google"></i></a></li>
+                                    {/* <li><a href="#"><i className="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="#"><i className="fab fa-twitter"></i></a></li> */}
+                                    <li><a href="https://www.linkedin.com/company/versys-networks-pvt-ltd/" target="_blank"><i className="fab fa-linkedin"></i></a></li>
+                                <li><a href="https://maps.app.goo.gl/SEpxgAnW1KWCgdcDA" target="_blank"> <i className="fab fa-google"></i></a></li>
                                 </ul>
                             </div>
                             <div className="header--contacts header--contacts--h2 d-flex align-items-center ml-10">
@@ -162,9 +204,9 @@ function openSubMenu(type){
                                             <ul style={{display: "none"}}>
                                                 <li className="mean-last"><a onClick={()=>redirectPage("/")}>Home</a>
                                                 </li>
-                                                <li><a onClick={()=>redirectPage("/about-us")}>About Us</a></li>
+                                                {/* <li><a onClick={()=>redirectPage("/about-us")}>About Us</a></li> */}
                                            
-                                                <li className="drop"><a href="#">Services</a>
+                                                {/* <li className="drop"><a href="#">Services</a>
                                                     <ul className="submenu services_menu" data-type="services_menu"  style={{display: "none"}}>
                                                         <li><a className="pointer" onClick={()=>redirectPage("/managed-it-services")}>Managed IT Services</a>
                                                         </li>
@@ -172,26 +214,33 @@ function openSubMenu(type){
                                                         <li><a className="pointer" onClick={()=>redirectPage("/amc-services")}>AMC Services</a></li>
                                                         <li><a className="pointer" onClick={()=>redirectPage("/consulting-services")}>Consulting Services</a></li>
                                                     </ul>
-                                                <a className="mean-expand bbb" href="#" onClick={()=>openSubMenu("services_menu")} >+</a></li>
+                                                <a className="mean-expand bbb" href="#" onClick={()=>openSubMenu("services_menu")} >+</a></li> */}
 
-                                                <li className="drop"><a href="#">Products</a>
+                                                <li className="drop"><a href="#">Offerings</a>
                                                     <ul className="submenu pages_menu" data-type="pages_menu"  style={{display: "none"}}>
-                                                    <li><a className="pointer" onClick={()=>redirectPage("/products/all-products")}>All Products</a>
+                                                        <li><a className="pointer" onClick={()=>redirectPage("/offerings/all-offerings")}>All Offerings</a>
                                                         </li>
-                                                        {/* <li><a  className="pointer" onClick={()=>redirectPage("/cloud-it-services")}  >Product Spotlight</a></li> */}
-                                                        <li><a className="pointer" onClick={()=>redirectPage("/products/audio-video")}>Audio video</a></li>
-                                                        <li><a className="pointer" onClick={()=>redirectPage("/products/cables")}>Cables</a></li>
-
-                                                        <li><a className="pointer" onClick={()=>redirectPage("/products/infrastructure")} >Infrastructure</a>
-                                                        </li>
-                                                        <li><a  className="pointer" onClick={()=>redirectPage("/products/iot")}  >IoT</a></li>
-                                                        <li><a className="pointer" onClick={()=>redirectPage("/products/kvm")}>KVM</a></li>
-                                                        <li><a className="pointer" onClick={()=>redirectPage("/products/networking")}>Networking</a></li>
+                                                        <li><a  className="pointer"   >Unified Communications & Contact centres</a></li>
+                                                        <li><a  className="pointer"  >Cyber Security</a></li>
+                                                        <li><a className="pointer" onClick={()=>redirectPage("/offerings/networking")}>Networking</a></li>
+                                                        <li><a className="pointer" >Hybrid Cloud solutions</a></li>
+                                                        <li><a className="pointer" onClick={()=>redirectPage("/offerings/it-services")}>Managed IT Services</a></li>
+                                                        <li><a className="pointer" onClick={()=>redirectPage("/offerings/audio-video")}>Audio video</a></li>
                                                     </ul>
+
+
+                                                    
                                                 <a className="mean-expand bbb" href="#" onClick={()=>openSubMenu("pages_menu")} >+</a></li>
 
 
-                                                <li className="mean-last"><a className="pointer" onClick={()=>redirectPage("/contact-us")}>Contacts</a></li>
+
+                                                <li className="mean-last"><a className="pointer" onClick={()=>redirectPage("/partners")}>Partners</a></li>
+                                                
+
+                                                
+
+
+                                                <li className="mean-last"><a className="pointer" onClick={()=>redirectPage("/contact-us")}>Contact Us</a></li>
                                             </ul>
                                         </nav></div></div>
                     </div>

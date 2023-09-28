@@ -25,15 +25,15 @@ function AllProducts() {
         
                 <div className="col-lg-12 mb-30">
                     <div className="feature__content">
-                        <span className="fw-700 text-uppercase"><span></span>Products</span>
-                        <h2 className="theme-color fw-700 mb-30">All Products</h2>
-                        <p> Accelerate your business in a constantly changing digital world with Innovative Technology Products Solutions from Versys. Visualize, connect, safeguard, monitor, access, and network with the best IT product solutions. </p>
+                        <span className="fw-700 text-uppercase"><span></span>Offerings</span>
+                        <h2 className="theme-color fw-700 mb-30">All Offerings</h2>
+                        <p> Transform your business in a dynamic digital world with Customer-centric Solutions from Versys Networks. </p>
                         <img src="../assets/images/service/all_products.jpeg" class="card-img-top mb-5" alt="audio video"/>
 
-                        <h2 className="theme-color fw-700 mb-30">Versys Products</h2>
-                        <h4>Drive Innovation Through Human-Centric Technology Solutions
+                        <h2 className="theme-color fw-700 mb-30">Versys Offerings</h2>
+                        {/* <h4>Drive Innovation Through Human-Centric Technology Solutions
                           <p className='mt-3'>Transform how you interact with the ever-evolving digital world. Fuel productivity, gain cost efficiencies, and scale up business opportunities with IT solutions designed to help you build, manage, optimize, and secure your network.</p>
-                        </h4>
+                        </h4> */}
 
                         <div className='container'>
                           <div className='row'>
@@ -44,12 +44,24 @@ function AllProducts() {
                                   <div class="card-body">
                                     <h5 class="card-title">Audio Video</h5>
                                     <p class="card-text">SWork seamlessly together to address all your video infrastructure and AV needs.</p>
-                                    <a onClick={()=>redirectPage("/products/audio-video")} class="btn btn-primary pointer text-white">Discover More</a>
+                                    <a onClick={()=>redirectPage("/offerings/audio-video")} class="btn btn-primary pointer text-white">Discover More</a>
                                   </div>
                                 </div>
                             </div>
 
+
                             <div className='col-md-4 mt-5'>
+                            <div class="card" >
+                                  <img src="../assets/images/service/it-management.jpeg" class="card-img-top" alt="audio video"/>
+                                  <div class="card-body">
+                                    <h5 class="card-title">Managed IT Services</h5>
+                                    <p class="card-text">SWork seamlessly together to address all your video infrastructure and AV needs.</p>
+                                    <a onClick={()=>redirectPage("/offerings/it-services")} class="btn btn-primary pointer text-white">Discover More</a>
+                                  </div>
+                                </div>
+                            </div>
+
+                            {/* <div className='col-md-4 mt-5'>
                             <div class="card" >
                                   <img src="../assets/images/service/services-thumb-h2-2.jpeg" class="card-img-top" alt="cables"/>
                                   <div class="card-body">
@@ -98,15 +110,15 @@ function AllProducts() {
                                     <a onClick={()=>redirectPage("/products/kvm")} class="btn btn-primary pointer text-white">Discover More</a>
                                   </div>
                                 </div>
-                            </div>
+                            </div> */}
 
                             <div className='col-md-4 mt-5'>
-                            <div class="card" >
+                            <div class="card" style={{"width": "105%"}}>
                                   <img src="../assets/images/service/futuristic-smart-city-with-5g-global-network-technology.jpeg" style={{height:"15em"}} class="card-img-top" alt="infrastructure"/>
                                   <div class="card-body">
                                     <h5 class="card-title">Networking</h5>
-                                    <p class="card-text">Construct and expand networks of all sizes from small offices to global enterprises to deliver optimized security and unlimited bandwidth..</p>
-                                    <a onClick={()=>redirectPage("/products/networking")}  class="btn btn-primary pointer text-white">Discover More</a>
+                                    <p class="card-text">Construct and expand networks of all sizes from small offices to global enterprises to deliver optimized security.</p>
+                                    <a onClick={()=>redirectPage("/offerings/networking")}  class="btn btn-primary pointer text-white">Discover More</a>
                                   </div>
                                 </div>
                             </div>

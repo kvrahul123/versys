@@ -69,48 +69,57 @@ function Contact() {
         <section class="contacts pt-125 pb-100">
     <div class="container">
         <div class="row">
-            <div class="col-lg-5 mb-30">
+            <div class="col-lg-12 mb-30">
                 <div class="theme">
                     <span class="theme__small--title theme__small--title-left fw-700 text-uppercase"><span></span>contact us</span>
-                    <h2 class="theme__big--title fw-700 mb-25">We have a expert teams don’t hesite <br/> to contact us</h2>
+                    <h2 class="theme__big--title fw-700 mb-25">Get in Touch</h2>
+
                 </div>
                 <div class="contacts__social">
                     <ul>
-                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                        <li><a href="#"><i class="fab fa-google"></i></a></li>
+                        {/* <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>*/}
+                        <li><a href="https://maps.app.goo.gl/SEpxgAnW1KWCgdcDA" target="_blank"><i class="fab fa-google"></i></a></li> 
+                        <li><a href="https://www.linkedin.com/company/versys-networks-pvt-ltd/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
                     </ul>
                 </div>
+
+
             </div>
-            <div class="col-lg-6 offset-lg-1 mb-30">
+           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.950811427956!2d80.18265799999999!3d13.038803!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a526125a5a16d9b%3A0xff9397f7179b5260!2sVersys%20Networks%20Pvt%20Ltd!5e0!3m2!1sen!2sin!4v1695890466128!5m2!1sen!2sin" className='mb-5'   width="500" height="450" style={{"border":0}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="col-lg-6 offset-lg-1">
                 <div class="row">
                     <div class="col-lg-6 col-md-6 mb-40">
                         <div class="contacts__address">
                             <i class="fal fa-envelope-open"></i>
                             <h5 class="primary-color">Email Address</h5>
-                            <h4><a href="https://www.devsnews.com/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="4b383e3b3b24393f0b2c262a222765282426">[email&#160;protected]</a></h4>
+                            <h4><a  class="__cf_email__" data-cfemail="4b383e3b3b24393f0b2c262a222765282426">support@versysnetworks.com</a></h4>
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-6 mb-40">
                         <div class="contacts__address">
                             <i class="fal fa-phone"></i>
                             <h5 class="primary-color">Phone Number</h5>
-                            <h4>+012 (345) 6789</h4>
+                            <h4 className='__cf_email__'>+91 63836 26368</h4>
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-6 mb-40">
                         <div class="contacts__address">
                             <i class="fal fa-map-marked-alt"></i>
                             <h5 class="primary-color">Head Office</h5>
-                            <h4>25 Middle Road, USA</h4>
+                            <h4 className='__cf_email__'> No 17,1st floor,</h4>
+                            <h4 className='__cf_email__'>Pallavan St,Ekkatuthangal,</h4>
+                            <h4 className='__cf_email__'>Chennai-600 032</h4>
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-6 mb-40">
-                        <div class="contacts__address">
+                        <div class="contacts__address ml-4">
                             <i class="fal fa-home"></i>
-                            <h5 class="primary-color">Office Location</h5>
-                            <h4>32 Street, New York</h4>
+                            <h5 class="primary-color">Registered Address</h5>
+                            <h4 className='__cf_email__'>Ornate,D203,</h4>
+                            <h4 className='__cf_email__'>5th Cross St,CRR Puram,</h4>
+                            <h4 className='__cf_email__'>Manapakkam,</h4>
+                            <h4 className='__cf_email__'>Chennai - 600 125</h4>
                         </div>
                     </div>
                 </div>
@@ -126,7 +135,6 @@ function Contact() {
                 <div class="col-sm-12 text-center mb-40">
                     <div class="theme">
                         <h2 class="black-color mb-15">Send Us a Message</h2>
-                        <h5 class="fw-500 primary-color">How To Build A Simple Cryptocurrency Blockchain In Node.js</h5>
                     </div>
               
                 </div>
@@ -137,7 +145,7 @@ function Contact() {
                     <div class="row">
                         <div class="col-lg-6">
                             <div class="form-box user-icon mb-30">
-                            <input type="text" name="name" placeholder='Your Name' id="name" 
+                            <input type="text" name="name" placeholder='Name' id="name" 
                                 className={` ${formik.touched.name && formik.errors.name ? 'border-red-400' : 'border-gray-300'}`}
                                 onChange={formik.handleChange} onBlur={formik.handleBlur} value={formik.values.name} />
                             {formik.touched.name && formik.errors.name && (
@@ -147,7 +155,7 @@ function Contact() {
                         </div>
                         <div class="col-lg-6">
                             <div class="form-box email-icon mb-30">
-                            <input type="text" name="email" placeholder='Your Email' id="email" 
+                            <input type="text" name="email" placeholder='Email Id' id="email" 
                                 className={` ${formik.touched.email && formik.errors.email ? 'border-red-400' : 'border-gray-300'}`}
                                 onChange={formik.handleChange} onBlur={formik.handleBlur} value={formik.values.email} />
                             {formik.touched.email && formik.errors.email && (
@@ -157,7 +165,7 @@ function Contact() {
                         </div>
                         <div class="col-lg-6">
                             <div class="form-box phone-icon mb-30">
-                            <input type="text" name="phone" placeholder='Your Phone' id="phone" 
+                            <input type="text" name="phone" placeholder='Phone' id="phone" 
                                 className={` ${formik.touched.phone && formik.errors.phone ? 'border-red-400' : 'border-gray-300'}`}
                                 onChange={formik.handleChange} onBlur={formik.handleBlur} value={formik.values.phone} />
                             {formik.touched.phone && formik.errors.phone && (
@@ -167,7 +175,7 @@ function Contact() {
                         </div>
                         <div class="col-lg-6">
                             <div class="form-box subject-icon mb-30">
-                            <input type="text" name="subject" placeholder='Your Subject' id="subject" 
+                            <input type="text" name="subject" placeholder='Subject' id="subject" 
                                 className={` ${formik.touched.subject && formik.errors.subject ? 'border-red-400' : 'border-gray-300'}`}
                                 onChange={formik.handleChange} onBlur={formik.handleBlur} value={formik.values.subject} />
                             {formik.touched.subject && formik.errors.subject && (
@@ -178,7 +186,7 @@ function Contact() {
                         <div class="col-lg-12">
                             <div class="form-box message-icon mb-30">
                                 <textarea name="message" id="message" cols="30" rows="10"
-                                    placeholder="Your Message" className={` ${formik.touched.message && formik.errors.message ? 'border-red-400' : 'border-gray-300'}`}
+                                    placeholder="Message" className={` ${formik.touched.message && formik.errors.message ? 'border-red-400' : 'border-gray-300'}`}
                                 onChange={formik.handleChange} onBlur={formik.handleBlur} >
                                 {formik.values.message}
                                     </textarea>
@@ -189,7 +197,7 @@ function Contact() {
                             )}
                             </div>
                             <div class="contact-btn text-center">
-                                <button class="btn btn--grey" type="submit">get action <img
+                                <button class="btn btn--grey" type="submit">Submit <img
                                         src="https://devsnews.com/template/neeha/neeha/assets/img/icon/arrow.png/" alt=""/></button>
                             </div>
                         </div>
@@ -199,6 +207,7 @@ function Contact() {
             </div>
         </div>
     </div>
+
 </section>
 
 <div class="mt-5">

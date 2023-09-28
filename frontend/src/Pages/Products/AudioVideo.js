@@ -18,7 +18,7 @@ function AudioVideo() {
                     <div className="feature__content">
                         <span className="fw-700 text-uppercase"><span></span>Products</span>
                         <h2 className="theme-color fw-700 mb-30">Audio Video</h2>
-                        <p>  Don’t fall short on technology. High-performance AV solutions are within reach. From digital signage to video walls, matrix switching to media distribution, even temperature screening and video accessories – Black Box has you covered.</p>
+                        <p> Trust Versys Networks to provide you with State of the art Audio-Visual solutions for your organization including digital signage, boardroom solutions & Video conferencing solutions.</p>
                         <img src="../assets/images/service/services-thumb-h2-1.jpeg" class="card-img-top mb-5" alt="audio video"/>
 
                         <h2 className="theme-color fw-700 mb-30">All Audio Video Products</h2>
@@ -27,14 +27,14 @@ function AudioVideo() {
                         <div className='container'>
                           <div className='row'>
 
-                            <div className='col-md-4 mt-5'>
+                            {/* <div className='col-md-4 mt-5'>
                             <div class="card" >
                                   <img src="../assets/images/audio-video/adapters.jpg" class="card-img-top" alt="audio video"/>
                                   <div class="card-body">
                                   <h5 class="card-title">Adapters</h5>
                                 </div>
                                 </div>
-                            </div>
+                            </div> */}
 
 
 
@@ -69,7 +69,7 @@ function AudioVideo() {
 
 
 
-                            <div className='col-md-4 mt-5'>
+                            {/* <div className='col-md-4 mt-5'>
                             <div class="card" >
                                   <img src="../assets/images/service/global-business-internet-network-connection-iot-internet-things-business-intelligence-concept-busines-global-network-futuristic-technology-background-ai-generative.jpeg" class="card-img-top" alt="audio video"/>
                                   <div class="card-body">
@@ -77,11 +77,20 @@ function AudioVideo() {
 
                                   </div>
                                 </div>
-                            </div>
-
+                            </div> */}
                             <div className='col-md-4 mt-5'>
                             <div class="card" >
-                                  <img src="../assets/images/service/technology-elements-background.jpeg" class="card-img-top" alt="cables"/>
+                                  <img src="../assets/images/service/video-conference.jpg" style={{height:"15em"}} class="card-img-top" alt="infrastructure"/>
+                                  <div class="card-body">
+                                    <h5 class="card-title">Video Conferencing</h5>
+
+                                  </div>
+                                </div>
+                            </div>
+                            
+                            <div className='col-md-4 mt-5'>
+                            <div class="card" >
+                                  <img src="../assets/images/service/digital-signage-1.jpeg" class="card-img-top" alt="cables"/>
                                   <div class="card-body">
                                     <h5 class="card-title">Digital Signage</h5>
              
@@ -89,15 +98,8 @@ function AudioVideo() {
                                 </div>
                             </div>
 
-                            <div className='col-md-4 mt-5'>
-                            <div class="card" >
-                                  <img src="../assets/images/service/futuristic-smart-city-with-5g-global-network-technology.jpeg" style={{height:"15em"}} class="card-img-top" alt="infrastructure"/>
-                                  <div class="card-body">
-                                    <h5 class="card-title">Extenders</h5>
 
-                                  </div>
-                                </div>
-                            </div>
+
                           </div>
                         </div>
 

@@ -8109,3 +8109,30 @@ input.main-search-input:-ms-input-placeholder {
 
 
 
+
+.portfolio_item {
+  overflow: hidden;
+  position: relative;
+  border: 2px solid #e9ece3;
+  margin-bottom: 30px;
+
+}
+
+.lg-image{
+  padding-top: 34px;
+  padding-left: 30px;
+  padding-bottom: 15px;
+
+}
+.bg-white {
+  background-color: #fff!important;
+}
+
+.__cf_email__{
+  font-size:20px;
+}
+
+.primary-color h4{
+  font-size:20px !important;
+}
+

@@ -10,11 +10,10 @@ import ConsultingService from './Pages/Services/ConsultingService';
 import AllProducts from './Pages/Products/AllProducts';
 import AudioVideo from './Pages/Products/AudioVideo';
 import Contact from './Pages/Contact';
-import Cables from './Pages/Products/Cables';
-import Infrastructure from './Pages/Products/Infrastructure';
-import Iot from './Pages/Products/Iot';
-import Kvm from './Pages/Products/Kvm';
+
 import Networking from './Pages/Products/Networking';
+import Partners from './Pages/Partners';
+import ItServices from './Pages/Products/ItServices';
 function App() {
   return (
     <Router>
@@ -22,21 +21,21 @@ function App() {
 
     <Routes>
             <Route exact path='/' element={< Index />}></Route>
-            <Route exact path='/about-us' element={< AboutDetails />}></Route>
+            {/* <Route exact path='/about-us' element={< AboutDetails />}></Route> */}
             <Route exact path='/managed-it-services' element={< ManagedITServices />}></Route>
             <Route exact path='/cloud-it-services' element={< CloudManagement />}></Route>
             <Route exact path='/amc-services' element={< AmcServices />}></Route>
             <Route exact path='/consulting-services' element={< ConsultingService />}></Route>
 
-            <Route exact path='/products/all-products' element={< AllProducts />}></Route>
-            <Route exact path='/products/audio-video' element={< AudioVideo />}></Route>
-            <Route exact path='/products/cables' element={< Cables />}></Route>
-            <Route exact path='/products/infrastructure' element={< Infrastructure />}></Route>
-            <Route exact path='/products/iot' element={< Iot />}></Route>
-            <Route exact path='/products/kvm' element={< Kvm />}></Route>
-            <Route exact path='/products/networking' element={< Networking />}></Route>
+            <Route exact path='/offerings/all-offerings' element={< AllProducts />}></Route>
+            <Route exact path='/offerings/audio-video' element={< AudioVideo />}></Route>
+            <Route exact path='/offerings/networking' element={< Networking />}></Route>
+            <Route exact path='/offerings/it-services' element={< ItServices />}></Route>
+
+            
 
 
+            <Route exact path='/partners' element={< Partners />}></Route>
             <Route exact path='/contact-us' element={< Contact />}></Route>
             
             

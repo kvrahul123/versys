@@ -4,7 +4,7 @@ function NewsLetters() {
   return (
 
         <section >
-    <div className="container">
+    {/* <div className="container">
         <div className="row newsletter">
             <div className="col-md-6 col-sm-12 col-lg-6">
                 <p className='newsletter-text'>For the latest news in IT Infrastructure, subscribe to our news letter.</p>
@@ -15,7 +15,7 @@ function NewsLetters() {
                 <button className="btn btn-primary newsletter_button">Notify</button> 
             </div>
         </div>
-    </div>
+    </div> */}
 
 </section>
 

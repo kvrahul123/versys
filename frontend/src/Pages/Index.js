@@ -5,9 +5,18 @@ import Slider from 'react-slick/lib/slider';
 import ImageSettings from './ImageSettings'
 import NewsLetters from './NewsLetters'
 import "slick-carousel/slick/slick.css";
+import { Navigate, useNavigate } from "react-router-dom";
 
 import "slick-carousel/slick/slick-theme.css";
 function Index() {
+
+
+    const navigate = useNavigate();
+    function redirectPage(val){
+   
+        navigate(val);
+    }
+
 
   return (
       <>
@@ -18,20 +27,20 @@ function Index() {
         <div className="hero__shape--h2 d-none d-xl-block">
             <img src="assets/images/shape/hero-shape-h2.png" alt=""/>
         </div>
-        <img src="assets/images/shape/h2-hero-shape1.png" alt="" className="hero__shape--h2--squre hero__shape--h2--1"/>
-        <img src="assets/images/shape/h2-hero-shape2.png" alt="" className="hero__shape--h2--squre hero__shape--h2--2"/>
+        {/* <img src="assets/images/shape/h2-hero-shape1.png" alt="" className="hero__shape--h2--squre hero__shape--h2--1"/>
+        <img src="assets/images/shape/h2-hero-shape2.png" alt="" className="hero__shape--h2--squre hero__shape--h2--2"/>*/}
         <img src="assets/images/shape/h2-hero-shape3.png" alt="" className="hero__shape--h2--squre hero__shape--h2--3"/>
-        <img src="assets/images/shape/h2-hero-shape4.png" alt="" className="hero__shape--h2--squre hero__shape--h2--4"/>
+        <img src="assets/images/shape/h2-hero-shape4.png" alt="" className="hero__shape--h2--squre hero__shape--h2--4"/> 
         <div className="hero--active">
             <div className="hero-single hero__padding hero__padding--h2">
                 <div className="container-fluid">
                     <div className="row align-items-center">
                         <div className="col-xl-6 col-lg-7 header_banner">
                             <div className="hero__caption hero__caption--h2">
-                                <h1 className="hero--big-title theme-color fw-700" data-animation="fadeInDown" data-delay=".4s">At the forefront of Digital and Cybersecurity Transformation</h1>
-                                <p>Versys Technologies is one of India’s leading firms that has helped transform the IT Infrastructure for hundreds of clients.</p>
-                                <a href="contacts.html" className="btn btn--blue btn--icon white-color" data-animation="fadeInLeft" data-delay=".6s">contact us</a>
-                                <a href="about-details.html" className="btn btn--blue btn--icon btn--border--round white-color" data-animation="fadeInLeft" data-delay=".6s">Get started</a>
+                                <h3 className="hero--big-title theme-color fw-700" data-animation="fadeInDown" data-delay=".4s">Empower you in your journey to achieve goals of Digital transformation using intuitive and innovative technological solutions</h3>
+                                <p>Versys Networks Pvt Ltd. is one of India’s leading firms helping organizations to meet business requirements & exceed client deliverables.</p>
+                                <a onClick={()=>redirectPage("/contact-us")} className="btn btn--blue btn--icon white-color pointer text-white" data-animation="fadeInLeft" data-delay=".6s">contact us</a>
+                                <a onClick={()=>redirectPage("/offerings/all-offerings")} className="btn btn--blue btn--icon btn--border--round white-color pointer text-black" data-animation="fadeInLeft" data-delay=".6s">Get started</a>
                             </div>
                         </div>
                         <div className="col-xl-6 col-lg-5">
@@ -53,8 +62,8 @@ function Index() {
             <div className="row">
                 <div className="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
                     <div className="theme text-center">
-                        <span className="theme__small--title fw-700 text-uppercase"><span></span>core features<span></span></span>
-                        <h2 className="theme__big--title fw-700 mb-80">We’ve got you covered end-to-end for you digital infrastructure needs.</h2>
+                        <span className="theme__small--title fw-700 text-uppercase"><span></span>offerings<span></span></span>
+                        <h2 className="theme__big--title fw-700 mb-80">We’ve got you covered end-to-end for all your digital infrastructure needs.</h2>
                     </div>
                 </div>
             </div>
@@ -62,10 +71,10 @@ function Index() {
                 <div className="col-lg-4 col-md-6 mb-30">
                     <div className="feature__block">
                         <div className="icon">
-                            <i className="fal fa-laptop-code"></i>
+                            <i className="fal fa-tty"></i>
                         </div>
                         <div className="text">
-                            <h5>Cloud</h5>
+                            <h5>Unified Communications & Contact centres</h5>
                    
                         </div>
                     </div>
@@ -73,7 +82,7 @@ function Index() {
                 <div className="col-lg-4 col-md-6 mb-30">
                     <div className="feature__block">
                         <div className="icon">
-                            <i className="fal fa-layer-group"></i>
+                            <i className="fal fa-shield-alt"></i>
                         </div>
                         <div className="text">
                             <h5>Cyber Security</h5>
@@ -84,7 +93,7 @@ function Index() {
                 <div className="col-lg-4 col-md-6 mb-30">
                     <div className="feature__block">
                         <div className="icon">
-                            <i className="fal fa-lock-open-alt"></i>
+                            <i className="fal fa-network-wired"></i>
                         </div>
                         <div className="text">
                             <h5>Enterprise Networking</h5>
@@ -95,10 +104,10 @@ function Index() {
                 <div className="col-lg-4 col-md-6 mb-30">
                     <div className="feature__block">
                         <div className="icon">
-                            <i className="fal fa-chart-bar"></i>
+                            <i className="fal fa-cloud"></i>
                         </div>
                         <div className="text">
-                            <h5>Hybrid IT</h5>
+                            <h5>Hybrid Cloud solutions</h5>
               
                         </div>
                     </div>
@@ -120,7 +129,7 @@ function Index() {
                             <i className="fal fa-draw-square"></i>
                         </div>
                         <div className="text">
-                            <h5>Software</h5>
+                            <h5>Audio Visual solutions</h5>
 
                         </div>
                     </div>
@@ -129,12 +138,12 @@ function Index() {
         </div>
     </section>
 
-    <section className="wwa theme-bg pt-130 pb-100">
+    {/* <section className="wwa theme-bg pt-130 pb-100">
         <div className="container">
             <div className="row align-items-center">
                 <div className="col-lg-6 mb-30">
                     <div className="wwa__thumb">
-                        {/* <img src="assets/images/img/wwa.png" alt=""/> */}
+                    
                     </div>
                 </div>
                 <div className="col-lg-6 mb-30">
@@ -143,7 +152,7 @@ function Index() {
                         <h2 className="theme__big--title white-color fw-700 mb-30">Innovative solution for digital solutions</h2>
                     </div>
                     <div className="wwa__content">
-                        <h4 className="fw-400 mb-15">Versys® is a trusted IT solutions provider delivering cutting-edge technology solutions </h4>
+                        <h4 className="fw-400 mb-15">Versys Networks is a trusted IT solutions provider delivering cutting-edge technology solutions </h4>
                         <p>The breadth of our global reach and depth of our expertise accelerate customer success by bringing people, ideas, and technology together to solve real-world business problems.</p>
                         <ul>
                             <li>Our IT infrastructure solutions, services, and products enable secure, flawless connectivity and meaningful collaboration for businesses in every major market sector on six continents</li>
@@ -153,9 +162,9 @@ function Index() {
                 </div>
             </div>
         </div>
-    </section>
+    </section> */}
 
-    <section className="service grey-bg position-relative fix pt-125 pb-100">
+    {/* <section className="service grey-bg position-relative fix pt-125 pb-100">
         <div className="container">
             <div className="row">
                 <div className="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
@@ -172,7 +181,7 @@ function Index() {
                             <img src="assets/images/service/services-thumb-h2-1.jpeg" alt=""/>
                         </div>
                         <div className="service__content--h2">
-                            <span className="flaticon-presentation white-color"></span>
+             
                             <h4 className="white-color hover-color-light"><a href="case-details.html">Audio Video</a></h4>
                             <p>When must explain to you how this</p>
                             <a href="case-details.html"><i className="fal fa-long-arrow-right white-color"></i></a>
@@ -185,7 +194,7 @@ function Index() {
                             <img src="assets/images/service/services-thumb-h2-2.jpeg" alt=""/>
                         </div>
                         <div className="service__content--h2">
-                            <span className="flaticon-server white-color"></span>
+            
                             <h4 className="white-color hover-color-light"><a href="case-details.html">Cables</a></h4>
                             <p>When must explain to you how this</p>
                             <a href="case-details.html"><i className="fal fa-long-arrow-right white-color"></i></a>
@@ -198,7 +207,7 @@ function Index() {
                             <img src="assets/images/service/services-thumb-h2-3.jpeg" alt=""/>
                         </div>
                         <div className="service__content--h2">
-                            <span className="flaticon-speaker white-color"></span>
+                           
                             <h4 className="white-color hover-color-light"><a href="case-details.html">Infrastructure</a></h4>
                             <p>When must explain to you how this</p>
                             <a href="case-details.html"><i className="fal fa-long-arrow-right white-color"></i></a>
@@ -213,7 +222,7 @@ function Index() {
                             <img src="assets/images/service/global-business-internet-network-connection-iot-internet-things-business-intelligence-concept-busines-global-network-futuristic-technology-background-ai-generative.jpeg" alt=""/>
                         </div>
                         <div className="service__content--h2">
-                            <span className="flaticon-speaker white-color"></span>
+                         
                             <h4 className="white-color hover-color-light"><a href="case-details.html">IOT</a></h4>
                             <p>When must explain to you how this</p>
                             <a href="case-details.html"><i className="fal fa-long-arrow-right white-color"></i></a>
@@ -228,7 +237,7 @@ function Index() {
                             <img src="assets/images/service/technology-elements-background.jpeg" alt=""/>
                         </div>
                         <div className="service__content--h2">
-                            <span className="flaticon-speaker white-color"></span>
+                       
                             <h4 className="white-color hover-color-light"><a href="case-details.html">KVM</a></h4>
                             <p>When must explain to you how this</p>
                             <a href="case-details.html"><i className="fal fa-long-arrow-right white-color"></i></a>
@@ -243,7 +252,7 @@ function Index() {
                             <img src="assets/images/service/futuristic-smart-city-with-5g-global-network-technology.jpeg" alt=""/>
                         </div>
                         <div className="service__content--h2">
-                            <span className="flaticon-speaker white-color"></span>
+                        
                             <h4 className="white-color hover-color-light"><a href="case-details.html">Networking</a></h4>
                             <p>When must explain to you how this</p>
                             <a href="case-details.html"><i className="fal fa-long-arrow-right white-color"></i></a>
@@ -252,9 +261,9 @@ function Index() {
                 </div>
             </div>
         </div>
-    </section>
+    </section> */}
 
-    <section className="statistics--area pt-125 pb-90">
+    {/* <section className="statistics--area pt-125 pb-90">
         <div className="container">
             <div className="row">
                 <div className="col-xl-10 offset-xl-1 col-lg-10 offset-lg-1">
@@ -303,7 +312,7 @@ function Index() {
                 </div>
             </div>
         </div>
-    </section>
+    </section> */}
 
     {/* <section className="contacts--area position-relative grey-bg" data-background="assets/images/shape/contacts_shape_bg.png">
         <div className="container">
@@ -437,7 +446,7 @@ function Index() {
         </div>
     </section> */}
 
-    <section className="review--area pt-125 pb-130">
+    {/* <section className="review--area pt-125 pb-130">
         <div className="container">
             <div className="row">
                 <div className="col-lg-7 mb-70">
@@ -557,7 +566,7 @@ function Index() {
                 </div>
             </div>
         </div>
-    </section>
+    </section> */}
 
     {/* <section className="consult">
         <div className="container">
