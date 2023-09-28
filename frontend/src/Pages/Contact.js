@@ -33,7 +33,7 @@ function Contact() {
                 'Content-Type': 'application/json',
             };
 
-            axios.post(""+route.name+"contact/form",values, { headers })
+            axios.post(""+route.production_name+"contact/form",values, { headers })
               .then((response) => {
            
                 if(response.data.success===true){
